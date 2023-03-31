@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Button Counter</title>
+	<style>
+		/* تحديد الخصائص الخاصة بالزر */
+		#button {
+			background-color: red; /* تغيير لون الخلفية */
+			width: 200px; /* تحديد عرض الزر */
+			height: 200px; /* تحديد ارتفاع الزر */
+			border-radius: 50%; /* جعل الزر دائري الشكل */
+			border: 2px solid black; /* إزالة الحدود */
+			color: rgb(0, 0, 0); /* تحديد لون النص */
+			font-size: 24px; /* تحديد حجم الخط */
+			position: absolute; /* وضع الزر في المكان المحدد */
+			top: 50%; /* تحديد المسافة بين الأعلى من الصفحة والزر */
+			left: 50%; /* تحديد المسافة بين اليسار من الصفحة والزر */
+			transform: translate(-50%, -50%); /* لجعل الزر يظهر في المنتصف */
+			cursor: pointer; /* تحديد شكل المؤشر */
+		}
+
+		/* تحديد الخصائص الخاصة بالعداد */
+		#counter {
+			font-size: 66px; /* تحديد حجم الخط */
+			position: absolute; /* وضع العداد في المكان المحدد */
+			top: 30%; /* تحديد المسافة بين الأعلى من الصفحة والعداد */
+			left: 50%; /* تحديد المسافة بين اليسار من الصفحة والعداد */
+			transform: translate(-50%, -50%); /* لجعل العداد يظهر في المنتصف */
+		}
+	</style>
+</head>
+<body>
+	<button id="button" onclick="counter.innerText++;"></button>
+	<div id="counter">0</div>
+</body>
+</html>
